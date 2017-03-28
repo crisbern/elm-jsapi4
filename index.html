@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-rc.1/js/calcite-web.min.js"></script>
   <script>
-    var locationPath = location.pathname.replace(/\/[^\/]+$/, "");
+    var locationPath = location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]+$/, "");
     window.dojoConfig = {
       packages: [
         {
